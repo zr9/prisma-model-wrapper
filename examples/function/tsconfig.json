@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "declaration":true,
+    "outDir": "./lib",
+    "target": "es2018",
+    "strict": true,
+    "esModuleInterop": true,
+  }
+}

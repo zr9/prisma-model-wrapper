@@ -1,0 +1,28 @@
+{
+  "name": "prisma-model-wrapper",
+  "version": "0.0.1",
+  "main": "index.js",
+  "description": "Extension for prisma ORM. Allows instantiating your own types & logic on top of prisma default.",
+  "keywords": [
+    "orm",
+    "prisma",
+    "model",
+    "wrapper"
+  ],
+  "author": "zero <yui.room9@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@prisma/client": "^3.8.0",
+    "@types/node": "^17.0.8",
+    "prisma": "^3.8.0",
+    "typescript": "^4.5.4"
+  },
+  "peerDependencies": {
+    "@prisma/client": "^3.8.0",
+    "prisma": "^3.8.0"
+  },
+  "files": ["README.md", "lib/**/*"]
+}
