@@ -1,7 +1,11 @@
 {
   "name": "prisma-model-wrapper",
-  "version": "0.0.1",
-  "main": "index.js",
+  "version": "0.0.2",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./": "./lib/"
+  },
   "description": "Extension for prisma ORM. Allows instantiating your own types & logic on top of prisma default.",
   "keywords": [
     "orm",
