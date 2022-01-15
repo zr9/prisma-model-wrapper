@@ -21,8 +21,6 @@ const wrappers = {
   [Prisma.ModelName.users]: UserWrapper
 }
 
-prisma.users.findUnique({where: {id: 1}}).then((res) => {})
-
 const prismaNew = prismaWrapper(prisma, wrappers);
 
 //... somewhere else
