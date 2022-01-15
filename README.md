@@ -24,7 +24,7 @@ You can specify both functions & classes as a wrapper.
 
 ``` ts
 import {Prisma, PrismaClient } from "@prisma/client";
-import {prismaWrapper} from "prisma-wrapper"; 
+import {prismaWrapper} from "prisma-model-wrapper"; 
 
 const prisma = new PrismaClient();
 
@@ -57,7 +57,7 @@ user.validate();
 
 ``` ts
 import {Prisma, PrismaClient } from "@prisma/client";
-import {prismaWrapper} from "prisma-wrapper";
+import {prismaWrapper} from "prisma-model-wrapper";
 
 const prisma = new PrismaClient();
 
@@ -93,7 +93,7 @@ If the type on your wrapper doesn't include the original type, then original **w
 Just define your wrapper with `arLikeSave`
 
 ``` ts
-import {arLikeSave,} from "prisma-wrapper";
+import {arLikeSave,} from "prisma-model-wrapper";
 
 const wrappers = {
   [Prisma.ModelName.users]: arLikeSave

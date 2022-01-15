@@ -1,5 +1,5 @@
 import {Prisma, PrismaClient } from "@prisma/client";
-import {arLikeSave, prismaWrapper} from "prisma-wrapper";
+import {arLikeSave, prismaWrapper} from "prisma-model-wrapper";
 
 const prisma = new PrismaClient();
 

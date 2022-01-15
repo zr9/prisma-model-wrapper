@@ -1,7 +1,5 @@
 import {Prisma, PrismaClient } from "@prisma/client";
-import {
-  prismaWrapper
-} from "prisma-wrapper";
+import {prismaWrapper} from "prisma-model-wrapper";
 
 const prisma = new PrismaClient();
 

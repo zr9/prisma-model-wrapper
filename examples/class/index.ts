@@ -1,7 +1,5 @@
 import { Prisma, PrismaClient } from "@prisma/client";
-import {
-  prismaWrapper
-} from "prisma-wrapper";
+import {prismaWrapper} from "prisma-model-wrapper";
 
 const prisma = new PrismaClient();
 
@@ -22,6 +20,8 @@ class UserWrapper{
 const wrappers = {
   [Prisma.ModelName.users]: UserWrapper
 }
+
+prisma.users.findUnique({where: {id: 1}}).then((res) => {})
 
 const prismaNew = prismaWrapper(prisma, wrappers);
 
